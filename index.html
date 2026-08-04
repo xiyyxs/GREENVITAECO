@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREENVITAECO — Эко-товары для здоровья и красоты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#header" class="logo">
+                <img src="logo.png" alt="GREENVITAECO" class="logo-img" onerror="this.onerror=null; this.src='logo.svg';">
+            </a>
+            <nav class="nav">
+                <a href="#about" class="nav-item">О компании</a>
+                <a href="#directions" class="nav-item">Направления</a>
+                <a href="#form" class="nav-item nav-btn">Оставить заявку</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-section">
+        <div class="container">
+            <div class="main-content">
+                <span class="category-tag">Эко-товары, здоровье и красота</span>
+                <h1 class="main-title">Натуральный уход и товары для здорового образа жизни</h1>
+                <p class="main-description">
+                    Подбираем экологичные товары для дома, красоты и ежедневного ухода. Оставьте заявку, и наш менеджер свяжется с вами для консультации.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-title-block">
+                <span class="section-subtitle">О компании</span>
+                <h2 class="section-heading">Помогаем выбирать полезные товары без лишней сложности</h2>
+            </div>
+
+            <div class="cards-grid three-columns">
+                <div class="info-card">
+                    <h3>Натуральный состав</h3>
+                    <p>В нашем ассортименте только продукты с проверенным составом, натуральным происхождением и доказанной пользой.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Индивидуальный подбор</h3>
+                    <p>Подскажем и подберем идеальные решения под ваши задачи: для ухода за собой, дома или приятного подарка.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Быстрая связь</h3>
+                    <p>Оперативно обрабатываем поступающие заявки и консультируем по всем возникающим вопросам.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="directions" class="section directions-section">
+        <div class="container">
+            <div class="section-title-block">
+                <span class="section-subtitle">Направления</span>
+                <h2 class="section-heading">Что можно заказать</h2>
+            </div>
+
+            <div class="cards-grid three-columns">
+                <div class="info-card">
+                    <h3>ЭКО-товары для дома</h3>
+                    <p>Безопасные средства для уборки, поддержания чистоты, организации быта и заботы о пространстве.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Красота и уход</h3>
+                    <p>Натуральная косметика, уходовые средства и деликатные решения для ежедневных ритуалов красоты.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Здоровый образ жизни</h3>
+                    <p>Продукты для хорошего самочувствия, быстрой регенерации, высокого уровня энергии и заботы о себе.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="form" class="section form-section">
+        <div class="container">
+            <div class="form-layout">
+                <div class="form-text-block">
+                    <span class="section-subtitle">Заявка</span>
+                    <h2 class="section-heading">Получить консультацию</h2>
+                    <p class="form-description">
+                        Заполните форму, и наш менеджер свяжется с вами в течение нескольких минут для подробной консультации и помощи с выбором.
+                    </p>
+                </div>
+
+                <div class="form-wrapper">
+                    <form id="leadForm" class="custom-app-form">
+                        <div class="form-row">
+                            <div class="field-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" placeholder="Анна" required>
+                            </div>
+                            <div class="field-group">
+                                <label for="age">Возраст</label>
+                                <input type="number" id="age" name="age" placeholder="27" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field-group">
+                                <label for="city">Город</label>
+                                <input type="text" id="city" name="city" placeholder="Москва" required>
+                            </div>
+                            <div class="field-group">
+                                <label for="contact">Телефон или Telegram</label>
+                                <input type="text" id="contact" name="contact" placeholder="+7 (9XX) XXX-XX-XX или @username" required>
+                            </div>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="category">Выберите направление</label>
+                            <div class="select-wrapper">
+                                <select id="category" name="category" required>
+                                    <option value="" disabled selected>Что вас больше интересует?</option>
+                                    <option value="ЭКО товары для дома">ЭКО товары для дома</option>
+                                    <option value="Красота и уход">Красота и уход</option>
+                                    <option value="Здоровый образ жизни">Здоровый образ жизни</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="comment">Комментарий к заявке</label>
+                            <textarea id="comment" name="comment" rows="3" placeholder="Укажите ваши пожелания или интересующие товары"></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="form-submit-btn">
+                            <span>Отправить заявку</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                        <div id="formNotice" class="form-notice"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="logo.png" alt="GREENVITAECO" class="logo-img footer-logo-img" onerror="this.onerror=null; this.src='logo.svg';">
+            </div>
+            <div class="footer-caption">
+                ЭКО-товары для здоровья и красоты
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
