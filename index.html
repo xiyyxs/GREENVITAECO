@@ -99,31 +99,31 @@
                     <form id="leadForm" class="custom-app-form">
                         <div class="form-row">
                             <div class="field-group">
-                                <label for="name">Ваше имя</label>
+                                <label for="name">Ваше имя <span class="required-star">*</span></label>
                                 <input type="text" id="name" name="name" placeholder="Анна" required>
                             </div>
                             <div class="field-group">
-                                <label for="age">Возраст</label>
+                                <label for="age">Возраст <span class="required-star">*</span></label>
                                 <input type="number" id="age" name="age" placeholder="27" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="field-group">
-                                <label for="city">Город</label>
+                                <label for="city">Город <span class="required-star">*</span></label>
                                 <input type="text" id="city" name="city" placeholder="Москва" required>
                             </div>
                             <div class="field-group">
-                                <label for="contact">Телефон или Telegram</label>
+                                <label for="contact">Телефон или Telegram <span class="required-star">*</span></label>
                                 <input type="text" id="contact" name="contact" placeholder="+7 (9XX) XXX-XX-XX или @username" required>
                             </div>
                         </div>
 
                         <div class="field-group">
-                            <label for="category">Выберите направление</label>
+                            <label for="category">Выберите направление <span class="optional-tag">(опционально)</span></label>
                             <div class="select-wrapper">
-                                <select id="category" name="category" required>
-                                    <option value="" disabled selected>Что вас больше интересует?</option>
+                                <select id="category" name="category">
+                                    <option value="" selected>Выберите направление (необязательно)</option>
                                     <option value="ЭКО товары для дома">ЭКО товары для дома</option>
                                     <option value="Красота и уход">Красота и уход</option>
                                     <option value="Здоровый образ жизни">Здоровый образ жизни</option>
@@ -132,7 +132,7 @@
                         </div>
 
                         <div class="field-group">
-                            <label for="comment">Комментарий к заявке</label>
+                            <label for="comment">Комментарий к заявке <span class="optional-tag">(опционально)</span></label>
                             <textarea id="comment" name="comment" rows="3" placeholder="Укажите ваши пожелания или интересующие товары"></textarea>
                         </div>
 

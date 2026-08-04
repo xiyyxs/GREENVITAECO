@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const age = document.getElementById('age').value.trim();
         const city = document.getElementById('city').value.trim();
         const contact = document.getElementById('contact').value.trim();
-        const category = document.getElementById('category').value;
+        const category = document.getElementById('category').value.trim() || 'Не указано';
         const comment = document.getElementById('comment').value.trim() || '—';
 
-        if (!name || !age || !city || !contact || !category) {
+        if (!name || !age || !city || !contact) {
             showNotice('Пожалуйста, заполните все обязательные поля.', 'error');
             return;
         }

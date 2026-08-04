@@ -263,6 +263,19 @@ input, textarea, select, label {
     color: var(--text-primary);
 }
 
+.required-star {
+    color: #E53E3E;
+    font-weight: 800;
+    margin-left: 2px;
+}
+
+.optional-tag {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-left: 4px;
+}
+
 .field-group input,
 .field-group select,
 .field-group textarea {
@@ -275,6 +288,7 @@ input, textarea, select, label {
     font-size: 0.96rem;
     color: var(--text-primary);
     transition: all 0.2s ease;
+    resize: none;
 }
 
 .select-wrapper {
