@@ -26,8 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const submitBtn = document.getElementById('submitBtn');
     const notice = document.getElementById('formNotice');
 
-    const BOT_TOKEN = '8700439748:AAF5Xs4r9hptbGYThfl6ioY2dEn0l1ZYJrY';
-    const CHAT_ID = '1275062475';
+    const BOT_TOKEN = '8848280410:AAErh3JXfiIJenShBEFGbo6E-_ArfgTRcAQ';
+    const CHAT_ID = '-5101225958';
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
